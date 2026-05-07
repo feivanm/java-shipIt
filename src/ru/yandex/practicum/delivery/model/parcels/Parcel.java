@@ -4,13 +4,13 @@ import java.util.Date;
 
 public abstract class Parcel {
     protected String description;
-    protected double weight;
+    protected int weight;
     protected String deliveryAddress;
     protected LocalDate sendDay;
     protected final double basePrice;
 
     public Parcel(String description,
-                  double weight,
+                  int weight,
                   String deliveryAddress,
                   LocalDate sendDay,
                   double basePrice

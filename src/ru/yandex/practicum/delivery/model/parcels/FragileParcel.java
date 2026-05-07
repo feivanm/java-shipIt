@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class FragileParcel extends Parcel{
 
-    public FragileParcel(String description, double weight, String deliveryAddress, LocalDate sendDay) {
+    public FragileParcel(String description, int weight, String deliveryAddress, LocalDate sendDay) {
         super(description, weight, deliveryAddress, sendDay, (double) 4);
     }
 
