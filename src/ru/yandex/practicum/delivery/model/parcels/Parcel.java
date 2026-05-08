@@ -24,15 +24,47 @@ public abstract class Parcel {
 
 
     public void packageItem(){
-        System.out.println("Посылка <<" + this.description + ">> упакована");
+        System.out.println("Посылка <<" + description + ">> упакована");
     };
 
     public void deliver(){
-        System.out.println("Посылка <<" + this.description + ">> доставлена по адресу YYY");
+        System.out.println("Посылка <<" + description + ">> доставлена по адресу "+ deliveryAddress);
     };
 
     public double calculateDeliveryCost(){
         return basePrice*weight;
     };
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getDeliveryAddress() {
+        return deliveryAddress;
+    }
+
+    public void setDeliveryAddress(String deliveryAddress) {
+        this.deliveryAddress = deliveryAddress;
+    }
+
+    public LocalDate getSendDay() {
+        return sendDay;
+    }
+
+    public void setSendDay(LocalDate sendDay) {
+        this.sendDay = sendDay;
+    }
     //добавьте реализацию и другие необходимые классы
 }
