@@ -10,6 +10,6 @@ public class PerishableParcel extends Parcel{
         this.timeToLive = timeToLive;
     }
     public boolean isExpired(LocalDate currentDay){
-        return sendDay.plusDays(timeToLive).isBefore(currentDay);
+        return sendDay.plusDays(timeToLive).isAfter(currentDay);
     }
 }

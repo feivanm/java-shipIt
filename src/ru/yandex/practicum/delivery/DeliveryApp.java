@@ -14,7 +14,9 @@ public class DeliveryApp {
 
     private static final Scanner scanner = new Scanner(System.in);
     private static List<Parcel> allParcels = new ArrayList<>();
+    // Добавляем список отслеживаемых посылок
     private static List<Trackable> allParcelsTrackable = new ArrayList<>();
+    // добавляем коробки с посылками
     private static ParcelBox<StandardParcel> standartParcelBox = new ParcelBox<>(ParcelType.STANDARTPARCEL,20);
     private static ParcelBox<FragileParcel> fragileParcelBox = new ParcelBox<>(ParcelType.FRAGILEPARCEL,10);
     private static ParcelBox<PerishableParcel> perishableParcelBox = new ParcelBox<>(ParcelType.PERISHABLEPARCEL,15);
